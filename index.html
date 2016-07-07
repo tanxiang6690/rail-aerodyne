@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画车的练习</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	body{
+		background: url(./image/52b1OOOPICc2.jpg);
+		background-size: cover;
+	}
+	.che{
+		height: 100px;
+		width: 200px;
+		background: url(./image/2008108141011310_2.jpg);
+		background-size: cover;
+		border-radius: 10px;
+		position: absolute;
+		top: 90px;
+		left: 150px;
+		border-top-right-radius:200px;
+		z-index: 10;
+		animation:pao 4s linear infinite;
+	}
+	@keyframes pao{
+		0%{
+			transform:translate3d(0,0,0);
+		}
+		25%{
+			transform:translate3d(800px,0,0);
+		}
+		26%{
+			transform:translate3d(800px,0,0) rotateZ(90deg);
+		}
+		50%{
+			transform:translate3d(800px,400px,0) rotateZ(90deg);
+		}
+		51%{
+			transform:translate3d(800px,400px,0) rotateY(-180deg);
+		}
+		75%{
+			transform:translate3d(0,400px,0) rotateY(-180deg);
+		}
+		76%{
+			transform:translate3d(0,400px,0) rotateZ(-90deg);
+		}
+		99%{
+			transform:translate3d(0,0,0) rotateZ(-90deg);
+		}
+	}
+	.guidao{
+		height: 400px;
+		width: 800px;
+		border: 5px double black;
+		position: absolute;
+		left: 0;
+		top: 0px;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: 5;
+		border-radius: 50px;
+	}
+	.title{
+		height: 100px;
+		width: 300px;
+		margin: 0 auto;
+		font-size: 40px;
+		line-height: 100px;
+		font-weight: bold;
+		text-align: center;
+		color: #fff;
+	}
+</style>
+<body>
+	<div class="title">铁路飞车开始啦</div>
+	<div class="che"></div>
+	<div class="guidao"></div>
+</body>
+</html>
